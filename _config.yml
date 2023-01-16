@@ -1,3 +1,16 @@
 theme: jekyll-theme-minimal
 title: Welcome to my page :)
 description: Bookmark this to keep an eye on my updates!
+image {
+    childImageSharp {
+      fluid(maxWidth: 500, quality: 92) {
+        ...GatsbyImageSharpFluid
+      }
+    }
+    extension // you might have to adapt this to your yaml data source
+    publicURL // you might have to adapt this to your yaml data source
+  }
+  
+    if (!childImageSharp && extension === 'gif') {
+    return <img src={https://tenor.com/view/mochi-peach-cat-gif-18147022} alt={alt} />
+  }
