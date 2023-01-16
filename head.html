@@ -2,10 +2,60 @@
 <html>
 <head>
     <title>Simple Animated GIF web page</title>
+    
+    <style>
+    
+    h1 {
+text-align: center;
+font-size: 32px;
+font-family: Candara, Oswald;
+}
+    
+    img {
+display: block;
+margin: 0 auto;
+width: 15%;
+}
+#botao1 {
+position: absolute;
+top: 90%;
+left: 55%;
+
+}
+#botao2 {
+position: absolute;
+ left: 39%;
+  top: 90%;
+}
+</style>
+
 </head>
 <body>
-    <h1>Funny Animated GIF</h1>
-    <img src="https://media.giphy.com/media/JVGLHEuzbVviw/giphy.gif" alt="funny GIF" width="100%">
-    <div class="tenor-gif-embed" data-postid="18147022" data-share-method="host" data-aspect-ratio="1" data-width="100%"><a href="https://tenor.com/view/mochi-peach-cat-gif-18147022">Mochi Peach Sticker</a>from <a href="https://tenor.com/search/mochi-stickers">Mochi Stickers</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+  
+
+    <h1>can we hang out sometime soon?</h1>
+    <img src="https://media.tenor.com/DvWwqDSpr3MAAAAi/mochi-peach.gif">
+    <img src="https://media.tenor.com/zGm5acSjHCIAAAAM/cat-begging.gif">
+ 
+ 
+<button id="botao1">YES :)</button>
+<button id="botao2">NO</button>
+<script>
+const button2 = document.getElementById('botao2');
+let left = 35;
+button2.addEventListener('mouseover', function() {
+  if(left == 25){
+    left = 70;
+  }else{
+    left = 25;
+  }
+  this.style.left = left + '%';
+});
+
+</script>
+<script>document.getElementById('botao1').addEventListener('click', function() {
+alert('YAYY THANK U >.<');
+});
+</script>
 </body>
 </html>
